@@ -1,0 +1,152 @@
+.app-footer {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  width: 100%;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.app-footer-cards {
+  width: 60%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap-reverse;
+      flex-wrap: wrap-reverse;
+  margin: 4rem 2rem 2rem;
+}
+.app-footer-cards .app-footer-card {
+  min-width: 290px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 1rem 0;
+  padding: 1rem;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  cursor: pointer;
+  background-color: #fef4f5;
+  transition: all 0.3s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -ms-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+}
+.app-footer-cards .app-footer-card img {
+  width: 40px;
+  height: 40px;
+  margin: 0 0.7rem;
+}
+.app-footer-cards .app-footer-card p {
+  font-weight: 600;
+}
+.app-footer-cards .app-footer-card a {
+  text-decoration: none;
+  font-weight: 500;
+}
+.app-footer-cards .app-footer-card:hover {
+  -webkit-box-shadow: 0 0 25px #fef4f5;
+          box-shadow: 0 0 25px #fef4f5;
+}
+@media screen and (max-width: 450px) {
+  .app-footer-cards .app-footer-card {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 768px) {
+  .app-footer-cards {
+    width: 100%;
+  }
+}
+
+.app-footer-cards .app-footer-card:last-child {
+  background-color: #f2f7fb;
+}
+
+.app-footer-form {
+  width: 60%;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: 1rem 2rem;
+}
+.app-footer-form div {
+  width: 100%;
+  margin: 0.75rem 0;
+  border-radius: 10px;
+  cursor: pointer;
+  background-color: var(--primary-color);
+  transition: all 0.3s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -ms-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+}
+.app-footer-form div input,
+.app-footer-form div textarea {
+  width: 100%;
+  padding: 0.95rem;
+  border: none;
+  border-radius: 7px;
+  -webkit-border-radius: 7px;
+  -moz-border-radius: 7px;
+  -ms-border-radius: 7px;
+  -o-border-radius: 7px;
+  background-color: var(--primary-color);
+  font-family: var(--font-base);
+  color: var(--secondary-color);
+  resize: none;
+  outline: none;
+}
+.app-footer-form div textarea {
+  height: 170px;
+}
+.app-footer-form div:hover {
+  -webkit-box-shadow: 0 0 25px var(--primary-color);
+          box-shadow: 0 0 25px var(--primary-color);
+}
+.app-footer-form button {
+  padding: 1rem 2rem;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  border: none;
+  background-color: var(--secondary-color);
+  font-weight: 500;
+  color: var(--white-color);
+  outline: none;
+  margin: 2rem 0 0;
+  font-family: var(--font-base);
+  cursor: pointer;
+}
+@media screen and (max-width: 768px) {
+  .app-footer-form {
+    width: 100%;
+    margin: 1rem 0;
+  }
+}
